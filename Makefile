@@ -1,11 +1,11 @@
 ##
-## EPITECH PROJECT, 2019
-## MUL_my_defender_2019
-## File description:
+## Main Makefile for the project
+## Made by virgile agnel
+## name:
 ## Makefile
 ##
 
-NAME	= a.out
+NAME	= solve
 
 CC	= gcc
 
