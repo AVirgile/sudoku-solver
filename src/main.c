@@ -104,6 +104,8 @@ int main(int const argc, char const *argv[])
             my_printf("%d, ", stct.array[i][y]);
         my_printf("\n");
     }
+    if (grid_is_valid((int const **)stct.array) == false)
+        return (84);
     free_tab(stct.array);
     return (0);
 }
