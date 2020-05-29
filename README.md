@@ -32,6 +32,7 @@ to run the program use the command bellow:
 ./solve $1
 ```
 where $1 is the path to the previous file where you put your sudoku
+
 you can find premade sudoku to test the program in the directory **sudoku**
 
 When the program finish you will have the answer show in the stdout of your terminal
