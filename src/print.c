@@ -9,9 +9,8 @@
 
 void print_grid(int const **grid)
 {
-    for (int f = 0; f < (SIZE_PER_LINE * 2) + 1; f++) {
+    for (int f = 0; f < (SIZE_PER_LINE * 2) + 1; f++)
         my_printf("_");
-        }
     my_printf("\n");
     for (int i = 0; grid[i]; i++) {
         for (int j = 0; j < SIZE_PER_LINE; j++) {
@@ -23,9 +22,8 @@ void print_grid(int const **grid)
         }
         my_printf("\n");
         if ((i + 1) % 3 == 0) {
-            for (int f = 0; f < (SIZE_PER_LINE * 2) + 1; f++) {
+            for (int f = 0; f < (SIZE_PER_LINE * 2) + 1; f++)
                 my_printf("_");
-            }
             my_printf("|\n");
         }
     }
