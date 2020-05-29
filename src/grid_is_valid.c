@@ -7,7 +7,7 @@
 
 #include "sudoku.h"
 
-static bool check_horizontal(int const **grid, int const i, int const j)
+bool check_horizontal(int const **grid, int const i, int const j)
 {
     for (int tmp = 0; tmp < SIZE_PER_LINE; tmp++) {
         if ((grid[i][tmp] == grid[i][j]) && (tmp != j))
@@ -16,7 +16,7 @@ static bool check_horizontal(int const **grid, int const i, int const j)
     return (false);
 }
 
-static bool check_vertical(int const **grid, int const i, int const j)
+bool check_vertical(int const **grid, int const i, int const j)
 {
     for (int v = 0; grid[v]; v++) {
         if ((grid[i][j] == grid[v][j]) && (v != i))
@@ -25,7 +25,7 @@ static bool check_vertical(int const **grid, int const i, int const j)
     return (false);
 }
 
-static bool check_box(int const **grid, int const i, int const j)
+bool check_box(int const **grid, int const i, int const j)
 {
     int l = i;
     int c = j;

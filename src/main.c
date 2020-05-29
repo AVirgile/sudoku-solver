@@ -99,13 +99,14 @@ int main(int const argc, char const *argv[])
     }
     if (load_in_memory(argv[1], &stct) == 84)
         return (84);
-    for (int i = 0; stct.array[i]; i++) {
-        for (int y = 0; y < SIZE_PER_LINE; y++)
-            my_printf("%d, ", stct.array[i][y]);
-        my_printf("\n");
-    }
-    if (grid_is_valid((int const **)stct.array) == false)
+    my_printf("Input :\n");
+    print_grid((int const **) stct.array);
+    my_printf("\nOutput :\n");
+    if (grid_is_valid((int const **) stct.array) == false)
         return (84);
+    if (solve_grid(&stct) == 84)
+        return (84);
+    print_grid((int const **) stct.array);
     free_tab(stct.array);
     return (0);
 }
