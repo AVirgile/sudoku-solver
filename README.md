@@ -1,6 +1,6 @@
 # sudoku-solver
 
-This program solve sudoku puzzle by using recursive backtracking algorithm
+This program solve sudoku puzzle by using recursive backtracking algorithm but this is an iterative version :)
 
 ## how to run it
 
